@@ -1,0 +1,9 @@
+{
+  "name": "Bot discord",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "underscore": "^1.12.0"
+  }
+}
