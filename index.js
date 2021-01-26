@@ -1,10 +1,9 @@
-import { Functions } from './Functions';
-
 const   config      =   require('./config.json'),
         Discord     =   require('discord.js'),
         client      =   new Discord.Client(),
         prefix      =   config.prefix,
         _           =   require('underscore'),
+        Functions   =   require('./Functions'),
         functions   =   new Functions(client);
 
 console.log(config)
@@ -23,5 +22,5 @@ client.on('message', (message) => {
     }
 });
 
-client.login('NzEzOTE1NTg4OTA0NDg0OTI0.XsnDtA.ouc8Zt2QGxKGDmxsbPELEDIUeqE');
+client.login(process.env.TOKEN);
 

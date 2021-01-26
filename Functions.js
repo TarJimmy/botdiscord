@@ -1,4 +1,4 @@
-export class Functions {
+class Functions {
 
     constructor(client) {
         this.client = client;
@@ -34,3 +34,5 @@ export class Functions {
         }
     }
 }
+
+module.exports = Functions;
