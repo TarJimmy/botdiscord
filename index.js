@@ -7,7 +7,7 @@ const   config      =   require('./config.json'),
         Functions   =   require('./Functions'),
         functions   =   new Functions(client);
 
-var c = false;
+var isWork = false;
 
 client.on('ready', ()=> {
     console.log('Bot discord is ready');
