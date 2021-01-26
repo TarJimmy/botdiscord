@@ -23,6 +23,5 @@ client.on('message', (message) => {
     }
 });
 
-console.log('token: ', process.env.TOKEN);
-client.login(process.env.TOKEN);
+client.login(process.env.DISCORD_TOKEN);
 
