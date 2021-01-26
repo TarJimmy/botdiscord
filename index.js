@@ -7,20 +7,25 @@ const   config      =   require('./config.json'),
         Functions   =   require('./Functions'),
         functions   =   new Functions(client);
 
-console.log(config)
+var c = false;
+
 client.on('ready', ()=> {
     console.log('Bot discord is ready');
 });
 
 client.on('message', (message) => {
-    if (message.author.username == "stapsmemelevrai") {
-        message.reply('Ce que tu dis n\'est pas interessant. Je me suis permis de le supprimer.');
-        message.delete();
-        return;
-    }
-    if (!functions.haveWordBanned(message, config.wordBanned)) {
-
-    }
+    if (!isWork) {{
+        isWork = true;
+        if (message.author.username == "stapsmemelevrai") {
+            message.reply('Ce que tu dis n\'est pas interessant. Je me suis permis de le supprimer.');
+            message.delete();
+            isWork = false;
+            return;
+        }
+        if (!functions.haveWordBanned(message, config.wordBanned)) {
+            isWork = false;
+        }
+    }}
 });
 
 //
