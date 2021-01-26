@@ -23,6 +23,6 @@ client.on('message', (message) => {
     }
 });
 
-console.log(process.env.DISCORD_TOKEN)
-client.login(process.env.DISCORD_TOKEN);
+//
+client.login("NzEzOTE1NTg4OTA0NDg0OTI0.XsnDtA.LlxZ6MtdeqPbFv4ZHkoxk4NzaGU");
 
